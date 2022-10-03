@@ -15,10 +15,10 @@ code {
 }
 * {
   box-sizing: border-box;
-  background: rgb(0, 100, 0 / 0.1) !important;
+  /* outline: 1px solid red; */
 }
 form {
-  width: 30%;
+  width: 40%;
   padding: 10px;
   border: 1px solid rgb(2, 2, 2);
 }
@@ -26,8 +26,12 @@ ul {
   list-style: circle;
   padding: 0;
   margin-bottom: 0;
-  /* margin: auto; */
-  width: 35%;
+  width: 30%;
+}
+@media (max-width: 600px) {
+  ul{
+    width: 100%;
+  }
 }
 li {
   display: flex;
@@ -41,6 +45,12 @@ label:not(:last-child) {
   display: block;
   margin-bottom: 10px;
 }
+input{
+  width: 100%;
+}
+input[name="filter"]{
+  width: 30%;
+}
 button {
   background-color: inherit;
   color: inherit;
@@ -49,7 +59,7 @@ button {
   margin-top: 10px;
   box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 14%),
     0 1px 3px 0 rgb(0 0 0 / 12%);
-    transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 button:active {
   background-color: #5a96f7;

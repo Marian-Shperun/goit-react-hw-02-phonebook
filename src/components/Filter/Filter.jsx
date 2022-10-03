@@ -4,7 +4,12 @@ const Filter = ({ title, onChange, contacts }) => {
   return (
     <>
       {title && <h3>{title}</h3>}
-      <input type="text" name="filter" onChange={onChange} />
+      <input
+        type="text"
+        name="filter"
+        placeholder="Find a contact"
+        onChange={onChange}
+      />
       {contacts().length === 0 && <p>not found</p>}
     </>
   );
