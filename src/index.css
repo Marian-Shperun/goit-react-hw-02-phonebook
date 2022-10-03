@@ -29,7 +29,7 @@ ul {
   width: 30%;
 }
 @media (max-width: 600px) {
-  ul{
+  ul {
     width: 100%;
   }
 }
@@ -45,10 +45,10 @@ label:not(:last-child) {
   display: block;
   margin-bottom: 10px;
 }
-input{
+input {
   width: 100%;
 }
-input[name="filter"]{
+input[name='filter'] {
   width: 30%;
 }
 button {
@@ -74,4 +74,12 @@ a {
 .container {
   width: 100%;
   padding: 0 20px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select:focus,
+  textarea:focus,
+  input:focus {
+    font-size: 16px;
+  }
 }
