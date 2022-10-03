@@ -51,6 +51,9 @@ input {
 input[name='filter'] {
   width: 30%;
 }
+span{
+  margin-left: 10px;
+}
 button {
   background-color: inherit;
   color: inherit;
